@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+}
+
+#root {
+  background: url(./assets/home.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  gap: 20px;
+  height: 100vh;
+
+  width: 100vw;
+}
+
+.ancient-card {
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  background-size: contain;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 260px;
+  width: 200px;
+}
+
+.ancients-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-width: 40%;
+  padding: 20px;
+}
+
+.ancient-card:hover {
+  border: 3px solid #f26522;
+}
+
+.difficulty-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  justify-content: center;
+  flex-basis: 20%;
+  align-items: center;
+}
+
+.difficulty:hover {
+  border: 3px solid #f26522;
+  color: #f26522;
+}
+.shuffle-button:hover {
+  border: 3px solid #f26522;
+  color: #f26522;
+}
+
+.difficulty {
+  font-size: 25px;
+  border-radius: 20px;
+  padding: 5px;
+  width: 150px;
+}
+.shuffle-button {
+  font-size: 25px;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.deck-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  min-width: 30%;
+}
+
+.current-state {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 30%;
+}
+
+.deck {
+  background-size: cover;
+  height: 180px;
+  width: 130px;
+  background-image: url(/assets/mythicCardBackground.png);
+  margin: 14px;
+  padding: 10px;
+}
+.deck:hover {
+  border: 3px solid #f26522;
+  color: #f26522;
+}
+
+.last-card {
+  background-size: cover;
+  height: 180px;
+  width: 130px;
+  margin: 14px;
+  padding: 10px;
+}
+
+.stage-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.stage-text {
+  color: #f26522;
+  font-size: 22px;
+}
+
+.dots-container {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.dot {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+}
+
+.green {
+  background-color: rgb(32, 175, 32);
+}
+.brown {
+  background-color: #c26b43;
+}
+.blue {
+  background-color: rgb(33, 33, 238);
+}
+
+.hidden {
+  display: none;
+}
+.border {
+  border: 3px solid #f26522;
+}
+.color {
+  color: #f26522;
+}
