@@ -70,6 +70,7 @@ let difficulty;
 let matrix = [];
 let currentRow = 0;
 let ancient = "";
+let carenTemplate;
 
 const deckContainer = document.querySelector(".deck-container");
 const difficultyBtns = document.querySelectorAll(".difficulty");
@@ -106,6 +107,7 @@ function showDifficultyBtns(event) {
       selectedAncientsData.secondStage,
       selectedAncientsData.thirdStage,
     ];
+    carenTemplate = JSON.parse(JSON.stringify(template));
   }
 }
 
@@ -122,6 +124,7 @@ function chooseDifficulty(event) {
   shuffleButton.onclick = shuffleCards;
   difficulty = event.target.id;
   addSelectorButton();
+  template = JSON.parse(JSON.stringify(carenTemplate));
 }
 difficultyBtns.forEach(function (button) {
   button.addEventListener("click", chooseDifficulty);
